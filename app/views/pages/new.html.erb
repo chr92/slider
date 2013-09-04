@@ -1,9 +1,9 @@
-<h1>New Page</h1>
+<h1>PopPage: 1 Click Webpage!</h1>
 
 <%= form_for :page, url: pages_path do |f| %>
  
   <p>
-    <%= f.label :html %><br>
+    <%= f.label "Put your HTML/CSS here:" %><br>
     <%= f.text_area :html %>
   </p>
  
@@ -11,3 +11,5 @@
     <%= f.submit %>
   </p>
 <% end %>
+
+made by <a href="http://www.twitter.com/chendriksen">@chendriksen</a>
