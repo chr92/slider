@@ -1,14 +1,16 @@
-<h1>PopPage: 1 Click Webpage!</h1>
+<h1>Markdown Slides</h1>
+
+<p>Generate quick and dirty presentations, paste your markdown below and have it turned into a slides.js presentation.</p>
 
 <%= form_for :page, url: pages_path do |f| %>
  
   <p>
-    <%= f.label "Put your HTML/CSS here:" %><br>
+    <%= f.label "Put your markdown here:" %><br>
     <%= f.text_area :html %>
   </p>
  
   <p>
-    <%= f.submit "Generate" %>
+    <%= f.submit "Generate Slides" %>
   </p>
 <% end %>
 

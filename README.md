@@ -1,4 +1,4 @@
-PopPage
+Markdown Slides
 -------
 
-Create a static webpage in one click.
+Paste markdown, get slides.
