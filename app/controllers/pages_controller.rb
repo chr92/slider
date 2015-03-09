@@ -1,7 +1,5 @@
 class PagesController < ApplicationController
 
-layout 'application'
-
 def create
   @page = Page.new(page_params)
   @page.unique = loop do

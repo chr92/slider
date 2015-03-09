@@ -1,33 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Poppage</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
 
 <%= yield %>
 
-</body>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-<script>
-Reveal.initialize({
-	controls: true,
-				progress: true,
-				history: true,
-				center: true,
-
-				transition: 'slide', 
-
-	dependencies: [
-		// Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
-		{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-
-		// Interpret Markdown in <section> elements
-		{ src: '/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-		{ src: '/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-	]
-				});
-</script>
 </html>
