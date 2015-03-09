@@ -1,5 +1,7 @@
 class PagesController < ApplicationController
 
+layout 'application'
+
 def create
   @page = Page.new(page_params)
   @page.unique = loop do
@@ -13,7 +15,8 @@ end
 
 def show
   @page = Page.find_by(unique: params[:id])
-  render :text => @page.html
+  render 'show'
+  # render :text => @page.html
 end
  
 private

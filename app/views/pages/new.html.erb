@@ -1,16 +1,14 @@
-<h1>Markdown Slides</h1>
-
-<p>Generate quick and dirty presentations, paste your markdown below and have it turned into a slides.js presentation.</p>
+<h1>Slider</h1>
 
 <%= form_for :page, url: pages_path do |f| %>
  
   <p>
-    <%= f.label "Put your markdown here:" %><br>
+    <%= f.label "Paste markdown, get slides:" %><br>
     <%= f.text_area :html %>
   </p>
  
   <p>
-    <%= f.submit "Generate Slides" %>
+    <%= f.submit "Submit" %>
   </p>
 <% end %>
 

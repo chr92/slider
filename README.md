@@ -1,4 +1,4 @@
-Markdown Slides
+Slider
 -------
 
-Paste markdown, get slides.
+Markdown to Slides in a click
