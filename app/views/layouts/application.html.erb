@@ -10,31 +10,24 @@
 <%= yield %>
 
 </body>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
 <script>
 Reveal.initialize({
+	controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', 
+
 	dependencies: [
 		// Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
 		{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
 
 		// Interpret Markdown in <section> elements
-		{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-		{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-
-		// Syntax highlight for <code> elements
-		{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-
-		// Zoom in and out with Alt+click
-		{ src: 'plugin/zoom-js/zoom.js', async: true },
-
-		// Speaker notes
-		{ src: 'plugin/notes/notes.js', async: true },
-
-		// Remote control your reveal.js presentation using a touch device
-		{ src: 'plugin/remotes/remotes.js', async: true },
-
-		// MathJax
-		{ src: 'plugin/math/math.js', async: true }
+		{ src: '/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+		{ src: '/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 	]
+				});
 </script>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
 </html>
