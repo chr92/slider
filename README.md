@@ -1,4 +1,4 @@
 Slider
 -------
 
-Markdown to Slides in a click
+Markdown to Slides in a click.
